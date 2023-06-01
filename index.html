@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top rated Movies</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="solo3.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- <header>유이의 최고 평점 영화 콜렉션</header> -->
+        <section id="search-inner">
+        </section>
+        <div class="title-text">
+            <h1>Top rated Movies</h1>
+            <h2>Search Movie by its title</h2>
+        </div>
+        <div id="search">
+            <input type="text" id="search-input" placeholder="대/소문자 구분 없이 영어로 영화 제목 검색 (띄어쓰기 포함)" onkeydown="search()"
+                autofocus>
+            <!-- 페이지로딩 시 검색창에 커서 삽입 = autofocus -->
+            <!-- onkeydown="search()"삭제 시 검색 버튼을 눌러야만 검색이 됨 -->
+            <button type="submit" id="search-btn" onclick="search()">검색</button>
+        </div>
+        <section id="movie-list">
+            <!-- 이곳에 card 데이터 삽입 -->
+            <!-- <div class="movie-list-box">
+                <img src="https://image.tmdb.org/t/p/original${imgUrl}" alt="영화 이미지" class="movie-img">
+                <div class="movie-title">
+                    <h3>${title}</h3>
+                </div>
+                <div class="movie-desc">
+                    ${desc}
+                </div>
+                <div class="movie-rate">
+                    ${rate}⭐
+                </div>
+            </div> -->
+        </section>
+    </div>
+</body>
+
+</html>

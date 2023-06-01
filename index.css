@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vw;
+  min-width: 1200px;
+  background: black;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/* header {
+  padding: 50px 0;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgb(196, 238, 0);
+} */
+
+#search-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 25%;
+  background-image: linear-gradient(
+      transparent,
+      rgba(0, 0, 0, 25%),
+      rgba(0, 0, 0, 100%)
+    ),
+    url(https://www.mexicoescultura.com/galerias/actividades/principal/land.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title-text {
+  margin-top: 20px;
+  font-family: "Newsreader", serif;
+  text-align: center;
+  color: #fff;
+}
+
+.title-text > h1 {
+  font-size: 100px;
+  font-weight: 600;
+  font-style: italic;
+}
+.title-text > h2 {
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+#search {
+  display: block;
+  text-align: center;
+}
+
+#search-input {
+  width: 600px;
+  height: 50px;
+  padding: 0px 10px;
+  margin: 20px 5px 20px 0px;
+}
+
+#search-btn {
+  width: 70px;
+  height: 50px;
+}
+
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 10%;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.movie-list-box {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 6%) / 2);
+  margin-right: 3%;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 100%);
+}
+
+/* 
+.movie-list-box:nth-child(3n) {
+  margin-right: 0%;
+} */
+
+.movie-title {
+  padding: 15px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.movie-desc {
+  flex-grow: 1;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+}
+
+.movie-rate {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+}
